@@ -21,9 +21,8 @@ const links = [
   { name: "Customers", href: "/dashboard/customers", icon: UserGroupIcon },
 ];
 
-const activePathName = usePathname();
-
 export default function NavLinks() {
+  const activePathName = usePathname();
   return (
     <>
       {links.map((link) => {
